@@ -10,6 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
 #include<stdio.h>
 #include<unistd.h>
 
@@ -20,7 +21,7 @@ void	ft_print(int tab[4][4]);
 
 /*Validity function that checks that the new number fit for
 the considered column and row*/
-int	ft_is_valid_value(int tab[4][4], int row_i, int col_i, int param[16])
+/*int	ft_is_valid_value(int tab[4][4], int row_i, int col_i, int param[16])
 {
 	int	col[4];
 	int	row[4];
@@ -36,10 +37,10 @@ int	ft_is_valid_value(int tab[4][4], int row_i, int col_i, int param[16])
 	if (!row_ok)
 		return (0);
 	return (1);
-}
+}*/
 
 /*Recursive solver*/
-int	ft_solve(int tab[4][4], int param[16], int row, int col)
+/*int	ft_solve(int tab[4][4], int param[16], int row, int col)
 {
 	int	i;
 
@@ -65,9 +66,9 @@ int	ft_solve(int tab[4][4], int param[16], int row, int col)
 		i++;
 	}
 	return (0);
-}
+}*/
 
-/* Below is a verbose version to understand backtracking.
+//Below is a verbose version to understand backtracking.
 #include<stdio.h>
 #include<unistd.h>
 
@@ -143,4 +144,4 @@ int	ft_solve(int tab[4][4], int param[16], int row, int col)
 	printf("\n%sNo solutions found. Backtracking.%s\n", BG_RED, BG_BLACK);
 	return (0);
 }
-*/
+
